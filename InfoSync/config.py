@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SHOPLINE_STORE_HANDLE = os.getenv("SHOPLINE_STORE_HANDLE")
+SHOPLINE_ACCESS_TOKEN = os.getenv("SHOPLINE_ACCESS_TOKEN")
+SHOPLINE_DOCTOR_PAGE_ID = os.getenv("SHOPLINE_DOCTOR_PAGE_ID")
+SHOPLINE_INFO_PAGE_ID = os.getenv("SHOPLINE_INFO_PAGE_ID")
+
+GOOGLE_SERVICE_ACCOUNT_JSON = os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON", "service_account.json")
+GOOGLE_LOCATION_NAME = os.getenv("GOOGLE_LOCATION_NAME")
+
+META_PAGE_ID = os.getenv("META_PAGE_ID")
+META_PAGE_ACCESS_TOKEN = os.getenv("META_PAGE_ACCESS_TOKEN")
+META_IG_USER_ID = os.getenv("META_IG_USER_ID")
+
+SHOPLINE_BASE_URL = f"https://{SHOPLINE_STORE_HANDLE}.myshopline.com/admin/openapi/v20230601"
+META_GRAPH_URL = "https://graph.facebook.com/v18.0"
